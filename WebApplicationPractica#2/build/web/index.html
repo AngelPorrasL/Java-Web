@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Walmart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+            <nav class="navbar navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Walmart Costa Rica</span>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <h1>Ahorra dinero, vive mejor</h1>
+                <canvas id="CanvasWalmart" width="200" height="100" style="border:1px solid #000000;">
+                    <script>
+                        var c = document.getElementById("CanvasWalmart");
+                        var ctx = c.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.fillText("Bienvenido!", 20, 60);
+                    </script>
+                </canvas>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <textarea rows="4" cols="50">
+                Somos una corporación multinacional de tiendas de origen estadounidense, que opera cadenas de grandes almacenes de descuento y clubes de almacenes.
+            </textarea>
+        </div>
+        <h2>Que quieres comprar?</h2>
+        <div class="container-fluid">
+            <table>
+                <colgroup>
+                    <col span="2" style="background-color:lightblue">
+                    <col style="background-color:gray">
+                </colgroup>
+                <tr>
+                    <th>Productos</th>
+                    <th>Precio</th>
+                    <th>Importado</th>
+                </tr>
+                <tr>
+                    <td>Mango Kilo</td>
+                    <td>₡2600</td>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td>Aguacate Nacional Kilo</td>
+                    <td>₡3730</td>
+                    <td>Costa Rica</td>
+                </tr>
+                <tr>
+                    <td>Naranja Kilo</td>
+                    <td>₡3300</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Ciruela</td>
+                    <td>₡3980</td>
+                    <td>Chile</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container-fluid">
+            <strong>Seleccione lo que necesitas comprar</strong>
+            <form action="https://www.walmart.co.cr/frutas-y-verduras">
+                <input type="checkbox" id="product1" name="product1" value="Mango">
+                <label for="product1"> Mango</label><br>
+                <input type="checkbox" id="product2" name="product2" value="Aguacate">
+                <label for="product2"> Aguacate</label><br>
+                <input type="checkbox" id="product3" name="product3" value="Naranja">
+                <label for="product3"> Naranja</label><br>
+                <input type="checkbox" id="product4" name="product4" value="Ciruela">
+                <label for="product4"> Ciruela</label>
+                <input type="submit" value="Comprar">
+            </form>
+            <h3>Solo en Walmart!</h3>
+            <video width="600" height="400" controls>
+                <source src="WalmartCostaRica_youtubevideo.mp4" type="video/mp4">
+            </video>
+            <h4>Quienes somos? </h4>
+            <p>Informacion</p>
+            <p><iframe src="https://es.wikipedia.org/wiki/Walmart" height="400" width="600" title="Walmart"></iframe></p>
+
+            <footer>
+                <p>Todos nuestros productos<br>
+                    <a href="https://www.walmart.co.cr/">Walmart Costa Rica</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
